@@ -318,7 +318,7 @@ export default function App() {
                         {!selectedItem.largeCategory.includes("0. 실습파일, 교재") && (
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-2 text-[#5A5A40]">
-                              <Terminal className="w-5 h-5" />
+                              <span className="text-lg">⌨️</span>
                               <h4 className="text-sm font-bold uppercase tracking-wider">프롬프트</h4>
                             </div>
                             <button
@@ -331,8 +331,8 @@ export default function App() {
                           </div>
                         )}
                           <div className="bg-[#141414] rounded-2xl p-6 md:p-8 shadow-xl relative group overflow-hidden">
-                            <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity">
-                              <Zap className="w-8 h-8 text-white" />
+                            <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity text-white text-3xl">
+                              ⚡
                             </div>
                             
                             {selectedItem.largeCategory.includes("0. 실습파일, 교재") ? (
